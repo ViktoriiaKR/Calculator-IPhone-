@@ -1,0 +1,20 @@
+@import './mixins.scss';
+
+#root {
+    @include displayFlex;
+    height: 100vh;
+    width: 100%;
+    outline: none;
+    background-color: $bgr-color-root;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:active, button:focus {
+    outline: none;
+}

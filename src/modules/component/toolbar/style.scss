@@ -1,0 +1,62 @@
+@import './../../../styles/mixins.scss';
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px;
+    .result-panel {
+        @include flex-end;
+        padding: 25px;
+        height: 200px;
+        width: 100%;
+        p {
+            color: #fff;
+            font-size: 40px;
+        }
+    }
+    .toolbar-wrap-first {
+        @include flex-col;
+        .small-wrap, .small-wrap-last {
+            display: flex;
+            .btn {
+                margin: 4px;
+                width: 82px;
+                height: 82px;
+                border-radius: 50%;
+                border: none;
+                color: #fff;
+                z-index: 10;
+                font-size: 30px;
+                cursor: pointer;
+                background: rgba(225, 225, 225, 0.8);
+                    &.special {
+                        background: rgb(239,239,239,0.3);
+                    }
+                    &.style-memory {
+                        background: rgba(225, 225, 225, 0.8);
+                    }
+                    &.numbers {
+                        background: rgb(239,239,239,0.3);
+                    }
+                &:last-child {
+                    background-color: $bgr-tools-orange;
+                }
+            }
+        }
+        .small-wrap-last {
+            .btn {
+                &.numbers-last {
+                    background: rgb(239,239,239,0.3);
+                    &:first-child {
+                        width: 172px;
+                        border-radius: 46px;
+                    }
+                    &:last-child {
+                        background-color: $bgr-tools-orange;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@import '../../../styles/mixins.scss';
+
+    .calculator {
+        width: 375px;
+        background-color: $bgr-result;
+        border-radius: 30px;
+    }
+

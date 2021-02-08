@@ -1,0 +1,11 @@
+@mixin base-font-settings {
+    font-style: normal;
+    font-display: swap;
+}
+
+// @font-face {
+//     @include base-font-settings;
+//     font-family: 'Helvetica-Regular';
+//     font-weight: 500;
+//     src: url('../assets/fonts/Helvetica Regular.otf');
+// }

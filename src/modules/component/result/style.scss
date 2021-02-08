@@ -1,0 +1,17 @@
+@import '../../../styles/mixins.scss';
+
+.result-panel {
+    @include flex-end;
+    padding: 25px;
+    height: 200px;
+    width: inherit;
+    input {
+        color: #fff;
+        font-size: 40px;
+        font-family: 'Geneva', sans-serif;
+        width: inherit;
+        background-color: transparent;
+        border: none;
+        text-align: right;
+    }
+}
